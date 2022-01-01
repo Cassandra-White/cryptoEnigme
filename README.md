@@ -40,9 +40,10 @@ Dapps qui permet de créer , partager et jouer à des énigmes
     Ligne 12 : 
           - Ajouter en premier argument votre phrase mnemonic de protefeuille.
           - Ajouter en second argument votre point d'entre vers le reseau de test votre choix (Ethereum)
-          
+
+```
           exemple : 
-```          
+          
           const provider = new HDWalletProvider(
                   'momo nulo truc frote splash bouch stack vroum squid boom star wok',
                   'https://ropsten.infura.io/v3/ac98jjhvjyvyv987987BJY986987jvjhv'
@@ -55,9 +56,10 @@ Dapps qui permet de créer , partager et jouer à des énigmes
 
     Ligne 12 : 
           - Ajouter votre point d'entre vers le reseau de test votre choix (Ethereum)
-          
+
+```
           exemple : 
-```          
+          
           const provider = new HDWalletProvider(
                   'https://ropsten.infura.io/v3/ac98jjhvjyvyv987987BJY986987jvjhv'
                 );
@@ -82,8 +84,9 @@ Dapps qui permet de créer , partager et jouer à des énigmes
     Ligne 6 :
           - Collez l'adresses " cat ethereum/address/"
           
-          exemple : 
-```          
+```
+    exemple : 
+         
           const instance = new web3.eth.Contract(
                   QuestFactory.abi,
                   '0xFaC9608652109d148e7A24f195da8cF8a2A13A7B' //Address -> ./address/QuestFactory.txt
