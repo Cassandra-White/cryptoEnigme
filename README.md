@@ -67,8 +67,8 @@ npm install
 ## Déployer
 
 ### 0 - variable d'environnement
-   . Créez un fichier `.env.local` à la racine du repo.
-   . Ajoutez 3 lignes :
+   - Créez un fichier `.env.local` à la racine du repo.
+   - Ajoutez 3 lignes :
    ```
 ENDPONT_INFURA="lien vers votre point d'entré depuis Infura ou un autre service"
 MNEMONIC_METAMASK="votre phrase mnémonique MetaMask"
@@ -76,7 +76,7 @@ CONTRACT_ADDRESS="l'address du smart-contrat qui se trouve/trouvera dans le fich
    ```
 ### 1 - Deployer le smart-contract
 
- . Depuis la racine du repo :
+ - Depuis la racine du repo :
  
 
 ```
@@ -86,18 +86,18 @@ CONTRACT_ADDRESS="l'address du smart-contrat qui se trouve/trouvera dans le fich
 
 ### 2 - Vérifier variable d'environnement
 
- . Depuis la racine du repo :
+ - Depuis la racine du repo :
 ```
  cat ethereum/address/QuestFactoryAddress.txt
 ```
 
  . Copiez l'adresse.
 
-``
+```
 vi .env.local
-``
+```
 
-.collez l'address dans `CONTRACT_ADDRESS`
+ - Collez l'address dans `CONTRACT_ADDRESS`
 
   
 ### 3 - Server next
