@@ -1,10 +1,13 @@
 # cryptoEnigme
-Dapps qui permet de créer , partager et jouer à des énigmes
+
+cryptoEnigme est une Dapps qui permet de créer , partager et jouer à des énigmes.
+
+
 
 
 ## Dependencies
     - Node : v16.10.0
-    - NPM : 8.3.0
+    - NPM : 
     
 
     1. @truffle/hdwallet-provider: ^2.0.0
@@ -18,6 +21,22 @@ Dapps qui permet de créer , partager et jouer à des énigmes
     9. semantic-ui-react: ^2.0.4
     10. solc: ^0.8.11
     11. web3: ^1.6.1
+    
+| Tools                      | Versions |
+| -------------------------  | -------- |
+| npm                        | 8.3.0    |
+| nodejs                     | 16.10.0  |
+| @truffle/hdwallet-provider | 2.0.0    |
+| fs-extra                   | 10.0.0   |
+| ganache-cli                | 6.12.2   |
+| mocha                      | 9.1.3    |
+| next                       | 12.0.7   |
+| react                      | 17.0.2   |
+| react-dom                  | 17.0.2   |
+| semantic-ui-css            | 2.4.1    |
+| semantic-ui-react          | 2.0.4    |
+| solc                       |0.8.11    |
+| web3                       | 1.6.1    |
 
 ## Clone
 
