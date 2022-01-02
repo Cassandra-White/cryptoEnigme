@@ -22,14 +22,14 @@ Dapps qui permet de créer , partager et jouer à des énigmes
 ## Clone
 
 ```
-  git clone git@github.com:Cassandra-White/cryptoEnigme.git
+git clone git@github.com:Cassandra-White/cryptoEnigme.git
 ```
 
 ## Install
 
 ```
-  cd cryptoEnigme
-  npm install
+cd cryptoEnigme
+npm install
 ```
 
 ## Deploy
@@ -70,13 +70,13 @@ Dapps qui permet de créer , partager et jouer à des énigmes
  -  Depuis la racine de votre repo utilisez la commande : 
   
 ```  
-    node ethereum/deploy.js
+node ethereum/deploy.js
 ```
 
  - Un dossier ethereum/address/ à été créé contenant l'address du nouveau contrat dépoyé.
   
 ```
-    cat ethereum/address/
+cat ethereum/address/
 ```
 
  - Ouvrir ethereum/questFactory.js/ 
@@ -96,5 +96,5 @@ Dapps qui permet de créer , partager et jouer à des énigmes
 ### 4 - Server next
 
   Depuis la racine :
-    npm run dev
+  `npm run dev`
 
