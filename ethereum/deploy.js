@@ -3,16 +3,19 @@ const path = require("path");
 const fs = require("fs-extra");
 const Web3 = require('web3');
 const compiledQuestFactory = require('./build/QuestFactory.json');
-
+require('dotenv').config({path : require('find-config')('.env.local')});
 
 const buildPath = path.resolve(__dirname, "address");
 fs.removeSync(buildPath);
 
+const mnemonicMetamask = process.env.MNEMONIC_METAMASK;
+const endPointInfura = process.env.ENDPONT_INFURA;
+
 
 const provider = new HDWalletProvider(
-  'change this to your own phrase!',
+  mnemonicMetamask ,
   // change this to your own phrase!
-  'change this to your own endpoint'
+  endPointInfura
   // change this to your own endpoint!
 );
 
