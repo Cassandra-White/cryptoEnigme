@@ -38,8 +38,8 @@ npm install
  - Dans le fichier ethereum/deploy.js :
 
     Ligne 12 : 
-          - Ajouter en premier argument votre phrase mnemonic de protefeuille.
-          - Ajouter en second argument votre point d'entre vers le reseau de test votre choix (Ethereum)
+         ``` - Ajouter en premier argument votre phrase mnemonic de protefeuille.```
+          ```- Ajouter en second argument votre point d'entre vers le reseau de test votre choix (Ethereum)```
 
 ```
           exemple : 
@@ -55,7 +55,7 @@ npm install
  - Dans le fichier ethereum/web3.js :
 
     Ligne 12 : 
-          - Ajouter votre point d'entre vers le reseau de test votre choix (Ethereum)
+          ```- Ajouter votre point d'entre vers le reseau de test votre choix (Ethereum)```
 
 ```
           exemple : 
@@ -82,7 +82,7 @@ cat ethereum/address/
  - Ouvrir ethereum/questFactory.js/ 
 
     Ligne 6 :
-          - Collez l'adresses " cat ethereum/address/"
+          ```- Collez l'adresses " cat ethereum/address/"```
           
 ```
     exemple : 
