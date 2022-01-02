@@ -6,7 +6,7 @@ import Quest from '../../../../ethereum/quest';
 // import QuestCard from '../../../components/QuestCard';
 import { Form, Button, Input, Message, Grid } from "semantic-ui-react";
 import Link from 'next/link';
-
+import Router from 'next/router';
 
 
 
@@ -61,7 +61,7 @@ class EnigmesIndexNew extends Component {
                 )
                 .send({from : accounts[0]});
                 console.log(data);
-                //Router.push("/");
+                Router.push("/play/community/0x0D9F2f54d317B6dd567bE7A80B93642dc2F242c5");
                 
             } catch (err) {
                 this.setState({ errorMessage: err.message });
@@ -78,6 +78,9 @@ class EnigmesIndexNew extends Component {
         
         return (
             <Layout>
+                 <Link href={`/play/community/${this.props.address}`}>
+                    <a>/Retour  </a>
+                </Link>
                 <h3>Créer une quête pour la communauté</h3>
                 <Grid>
                     <Grid.Row>

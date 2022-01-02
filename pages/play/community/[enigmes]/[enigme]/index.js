@@ -4,6 +4,7 @@ import Layout from "../../../../../components/Layout";
 import Quest from '../../../../../ethereum/quest';
 import PlayersResponsesCard from '../../../../../components/PlayersResponsesCard';
 import web3 from '../../../../../ethereum/web3';
+import Link from 'next/link';
 class EnigmeIndex extends Component {
   static async getInitialProps(props) {
     // console.log(props);
@@ -49,8 +50,8 @@ onSubmit = async (event) => {
                     this.state.responsePlayer
 
                 ).send({from : accounts[0]});
-                console.log("DATA",data);
-                //Router.push("/");
+                // console.log("DATA",data);
+                Router.reload()
                 
             } catch (err) {
                 this.setState({ errorMessage: err.message });
@@ -66,6 +67,11 @@ onSubmit = async (event) => {
 
       return (
         <Layout>
+            
+            <Link href={`/play/community/${this.props.questAddress}`}>
+                <a>/Retour  </a>
+            </Link>
+            
             <h3>Page Répondre à l'enigme</h3>
           <Grid>
             <Grid.Row>

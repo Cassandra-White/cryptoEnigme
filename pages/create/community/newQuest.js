@@ -6,6 +6,7 @@ import web3 from "../../../ethereum/web3";
 import QuestCardTemplate from '../../../components/QuestCardTemplate';
 import { useRouter } from 'next/router'
 import Router from 'next/router';
+import Link from "next/link";
 
 
 
@@ -35,7 +36,7 @@ class QuestOfficialNew extends Component {
                 )
                 .send({from : accounts[0]});
                 console.log(data);
-                //Router.push("/");
+                Router.push("/");
                 
             } catch (err) {
                 this.setState({ errorMessage: err.message });
@@ -52,6 +53,9 @@ class QuestOfficialNew extends Component {
         
         return (
             <Layout>
+                 <Link href={`/`}>
+                    <a>/Retour  </a>
+                </Link>
                 <h3>Créer une quête pour la communauté</h3>
                 <Grid>
                     <Grid.Row>

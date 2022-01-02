@@ -158,7 +158,7 @@ contract Quest {
         return address(this).balance;
     }
 
-        function getQuestSummary() public view returns(address, string memory, string memory, string memory, uint, uint, uint, bool) {
+        function getQuestSummary() public view returns(address, string memory, string memory, string memory, uint, uint, uint, bool, uint) {
         return(
             manager,
             questTitle,
@@ -167,7 +167,8 @@ contract Quest {
             questPrice,
             playersCount,
             questResponseCount,
-            questCompleted
+            questCompleted,
+            address(this).balance
         );
     }
 

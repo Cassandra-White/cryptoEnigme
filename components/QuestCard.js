@@ -23,7 +23,7 @@ const QuestCard = (props) => (
                 
                     <p>Enigmes :</p>
                     {/* <Icon name='user' /> */}
-                    {props.questEnigmeCompleted ? props.questEnigmeCompleted : 0} / {props.questEnigmeCount ? props.questEnigmeCount : 0}
+                    {props.questEnigmeCount ? props.questEnigmeCount : 0} 
                 
             </Grid.Column>
             
@@ -38,7 +38,7 @@ const QuestCard = (props) => (
                 
                     <p>Joueurs :</p>
                     {/* <Icon name='user' /> */}
-                    {props.questPlayer ? props.questPlayer : 0} 
+                    {props.questPlayersCount ? props.questPlayersCount : 0} 
                 
             </Grid.Column>
         </Grid>

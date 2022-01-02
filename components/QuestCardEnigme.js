@@ -3,6 +3,7 @@ import { Card, Image, Button, Grid, Form, Input, Message } from 'semantic-ui-rea
 import Link from 'next/link';
 import Quest from '../ethereum/quest';
 import web3 from '../ethereum/web3';
+import Router from 'next/router';
 
 
 
@@ -30,7 +31,7 @@ import web3 from '../ethereum/web3';
     
                     ).send({from : accounts[0], value: this.state.questPrice});
                     console.log("DATA",data);
-                    //Router.push("/");
+                    Router.reload();
                     
                 } catch (err) {
                     this.setState({ errorMessage: err.message });
@@ -47,6 +48,7 @@ import web3 from '../ethereum/web3';
                         this.state.recipientAddress
                     )
                     .send({from : accounts[0]});
+                    Router.reload();
         } catch (err) {
             this.setState({ errorMessageWithdraw: err.message });
         }

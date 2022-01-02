@@ -43,6 +43,9 @@ class EnigmesIndex extends Component {
 // console.log(this.props.enigmes)
         return (
             <Layout>
+                <Link href={`/play/community/quests`}>
+                    <a>/Retour  </a>
+                </Link>
                 <QuestCardEnigme 
                     questAddress={this.props.address} 
                     questDescription= {this.props.questSummary[2]}
