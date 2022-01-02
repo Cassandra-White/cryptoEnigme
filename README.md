@@ -65,67 +65,42 @@ npm install
 ```
 
 ## Déployer
-### 1 - Ajouter un portefeuille et point d'entrée
 
- - Dans le fichier ethereum/deploy.js :
+### 0 - variable d'environnement
+   . Créez un fichier `.env.local` à la racine du repo.
+   . Ajoutez 3 lignes :
+   ```
+ENDPONT_INFURA="lien vers votre point d'entré depuis Infura ou un autre service"
+MNEMONIC_METAMASK="votre phrase mnémonique MetaMask"
+CONTRACT_ADDRESS="l'address du smart-contrat qui se trouve/trouvera dans le fichier '/etheruem/address/questFactory.js' "
+   ```
+### 1 - Deployer le smart-contract
 
-    Ligne 12 : 
-         ``` - Ajouter en premier argument votre phrase mnémonique de protefeuille Metamask.```
-          ```- Ajouter en second argument votre point d'entrée vers le reseau de test votre choix (Ethereum - infurna)```
-
-```
-          exemple : 
-          
-          const provider = new HDWalletProvider(
-                  'momo nulo truc frote splash bouch stack vroum squid boom star wok',
-                  'https://ropsten.infura.io/v3/ac98jjhvjyvyv987987BJY986987jvjhv'
-                );
-```
-
-### 2 - Ajouter point d'entrée web3
-
- - Dans le fichier ethereum/web3.js :
-
-    Ligne 12 : 
-          ```- Ajouter votre point d'entrée vers le reseau de test votre choix (Ethereum)```
+ . Depuis la racine du repo :
+ 
 
 ```
-          exemple : 
-          
-          const provider = new HDWalletProvider(
-                  'https://ropsten.infura.io/v3/ac98jjhvjyvyv987987BJY986987jvjhv'
-                );
+ node ethereum/deploy.js
 ```
 
-### 3 - Deployer le contrat et modifier l'address du contrat dans questFactory.js
 
- -  Depuis la racine de votre repo utilisez la commande : 
+### 2 - Vérifier variable d'environnement
+
+ . Depuis la racine du repo :
+```
+ cat ethereum/address/QuestFactoryAddress.txt
+```
+
+ . Copiez l'adresse.
+
+``
+vi .env.local
+``
+
+.collez l'address dans `CONTRACT_ADDRESS`
+
   
-```  
-node ethereum/deploy.js
-```
-
- - Un dossier ethereum/address/ à été créé contenant l'address du nouveau contrat dépoyé.
-  
-```
-cat ethereum/address/QuestFactoryAddress.txt
-```
-
- - Ouvrir ethereum/questFactory.js/ 
-
-    Ligne 6 :
-          ```- Collez l'adresses "QuestFactoryAddress.txt"```
-          
-```
-    exemple : 
-         
-          const instance = new web3.eth.Contract(
-                  QuestFactory.abi,
-                  '0xFaC9608652109d148e7A24f195da8cF8a2A13A7B' //Address -> ./address/QuestFactory.txt
-                );
-```
-
-### 4 - Server next
+### 3 - Server next
 
   Depuis la racine :
   ```
