@@ -1,28 +1,28 @@
 # cryptoEnigme
 
-cryptoEnigme est une Dapps qui permet de créer , partager et jouer à des énigmes.
+cryptoEnigme est une Dapps qui permet de créer, partager et jouer à des énigmes.
 
 ##  Lien Rapide
 
-[Demo](#demo)
+[Démo](#démo)
 
-[Dependencies](#dependencies)
+[Dépendences](#dépendences)
 
 [Clone](#clone)
 
-[Install](#install)
+[Installer](#installer)
 
-[Deploy](#deploy)
-
-
-## Demo
-
-### Live Site Demo
-
-Demo: [Link]()
+[Déployer](#déployer)
 
 
-## Dependencies
+## Démo
+
+### Live Site Démo
+
+Démo: [Link]()
+
+
+## Dépendences
 
     
 | Tools                      | Versions |
@@ -47,21 +47,21 @@ Demo: [Link]()
 git clone git@github.com:Cassandra-White/cryptoEnigme.git
 ```
 
-## Install
+## Installer
 
 ```
 cd cryptoEnigme
 npm install
 ```
 
-## Deploy
-### 1 - Ajouter Portefeuille et point d'entrée
+## Déployer
+### 1 - Ajouter un portefeuille et point d'entrée
 
  - Dans le fichier ethereum/deploy.js :
 
     Ligne 12 : 
-         ``` - Ajouter en premier argument votre phrase mnemonic de protefeuille.```
-          ```- Ajouter en second argument votre point d'entre vers le reseau de test votre choix (Ethereum)```
+         ``` - Ajouter en premier argument votre phrase mnémonique de protefeuille Metamask.```
+          ```- Ajouter en second argument votre point d'entrée vers le reseau de test votre choix (Ethereum - infurna)```
 
 ```
           exemple : 
@@ -77,7 +77,7 @@ npm install
  - Dans le fichier ethereum/web3.js :
 
     Ligne 12 : 
-          ```- Ajouter votre point d'entre vers le reseau de test votre choix (Ethereum)```
+          ```- Ajouter votre point d'entrée vers le reseau de test votre choix (Ethereum)```
 
 ```
           exemple : 
