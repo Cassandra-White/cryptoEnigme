@@ -6,21 +6,7 @@ cryptoEnigme est une Dapps qui permet de créer , partager et jouer à des énig
 
 
 ## Dependencies
-    - Node : v16.10.0
-    - NPM : 
-    
 
-    1. @truffle/hdwallet-provider: ^2.0.0
-    2. fs-extra: ^10.0.0
-    3. ganache-cli: ^6.12.2
-    4. mocha: ^9.1.3
-    5. next: ^12.0.7
-    6. react: ^17.0.2
-    7. react-dom: ^17.0.2
-    8. semantic-ui-css: ^2.4.1
-    9. semantic-ui-react: ^2.0.4
-    10. solc: ^0.8.11
-    11. web3: ^1.6.1
     
 | Tools                      | Versions |
 | -------------------------  | -------- |
