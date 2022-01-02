@@ -76,13 +76,13 @@ node ethereum/deploy.js
  - Un dossier ethereum/address/ à été créé contenant l'address du nouveau contrat dépoyé.
   
 ```
-cat ethereum/address/
+cat ethereum/address/QuestFactoryAddress.txt
 ```
 
  - Ouvrir ethereum/questFactory.js/ 
 
     Ligne 6 :
-          ```- Collez l'adresses " cat ethereum/address/"```
+          ```- Collez l'adresses "QuestFactoryAddress.txt"```
           
 ```
     exemple : 
