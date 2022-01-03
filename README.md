@@ -1,6 +1,6 @@
 # cryptoEnigme
 
-cryptoEnigme est une Dapps qui permet de créer, partager et jouer à des énigmes.
+cryptoEnigme est une Dapps qui permet de créer , partager et jouer à des énigmes sur la blockchain Ethereum (Ropsten)
 
 ##  Lien Rapide
 
