@@ -74,6 +74,9 @@ ENDPONT_INFURA="lien vers votre point d'entré depuis Infura ou un autre service
 MNEMONIC_METAMASK="votre phrase mnémonique MetaMask"
 CONTRACT_ADDRESS="l'address du smart-contrat qui se trouve/trouvera dans le fichier '/etheruem/address/questFactory.js' "
    ```
+   
+  exemple : `cat env.localExemple` 
+  
 ### 1 - Deployer le smart-contract
 
  - Depuis la racine du repo :
